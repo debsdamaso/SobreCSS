@@ -1,0 +1,38 @@
+3 formas de inserção do CSS no HTML:
+- CSS inline   - fica no meio da linha
+- CSS interno  - fica geralmente no head no inicio da pagina, organizando
+- CSS externo  - faz o estilo em outro arquivo, e importa um link dentro do head 
+                 <link rel="stylesheet" href="estilo.css"/>
+
+como selecionar elementos especificos: (por exemplo, não quero que todos os H1 sejam da mesma cor)
+- vai no h1 que eu quero, e coloco: id="exemplotitulo", somente seleciona 1 elemento
+- vai nos elementos que eu quero, e coloco: class="exemplotextos", neste caso, seleciona os grupos que eu quiser
+
+como registrar estes elementos no arquivo externo:
+- no css, o que corresponde ao id="" é o #      exemplo:  #tituloum { color:red;  }
+- no css, o que corresponde ao class="" é o .   exemplo: .exemplotextos  { color:red;  }
+
+exemplo de como seria o arquivo css:
+  -supondo que eu queira a mesma cor de fone
+
+  #tituloum {
+    color:blue;
+    font-size:25px;
+  }
+  .exemplotextos {
+    color:blue;
+    font-size:25px;
+  }
+
+  então vou unir do seguinte modo:
+  #tituloum,
+  .exemplotextos {
+    color:blue;
+    font-size:25px
+  }
+  #tituloum {
+    font-weight: normal;
+  }
+  .exemplotextos {
+    font-weight: bold;
+  }

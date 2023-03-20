@@ -1,0 +1,18 @@
+
+#Titulo{ 
+    background-color: rgb(230, 155, 18);
+    color: rgb(182, 21, 21);
+    font-size: 34px;
+}
+a {
+    color: rgb(128, 0, 0);
+    font-size:20px
+}
+img {
+    width:200px;
+}
+li {
+    font-weight: bold;
+color: rgb(207, 118, 35);
+}
+.Subtitulo {color: darkolivegreen; font-style: italic; font-size: x-large;}
